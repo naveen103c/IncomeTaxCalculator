@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Alert, ScrollView, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import { TextInput } from "react-native-gesture-handler";
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { exportDatabaseAsJSON } from '../utils/database';
+// import { exportDatabaseAsJSON } from '../utils/database';
 
 export default function Profile() {
   const [isEditing, setIsEditing] = useState(false);
@@ -124,7 +124,8 @@ export default function Profile() {
   // View database contents (for debugging)
   const handleViewDatabase = async () => {
     try {
-      const dbData = await exportDatabaseAsJSON();
+      const dbData = '';
+      // dbData = await exportDatabaseAsJSON();
       Alert.alert('Database Contents', dbData, [
         { text: 'OK' }
       ], {
