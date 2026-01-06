@@ -23,11 +23,6 @@ export default function Profile() {
   const [tempSalaried, setTempSalaried] = useState(true);
   const [tempResidingInMetro, setTempResidingInMetro] = useState(false);
 
-  const genderOptions = [
-    { label: "Male", value: "male" },
-    { label: "Female", value: "female" },
-  ];
-
   const AgeDisplay = ({ dobDate }: { dobDate: Date | null }) => {
     if (!dobDate || !dob) {
       return null;
@@ -152,19 +147,8 @@ export default function Profile() {
   }
 
   return (
-    <SafeAreaView style={styles.container}>
       <ScrollView style={styles.scrollView}>
         <View style={styles.content}>
-          {/* Profile Header */}
-          <View style={styles.profileHeader}>
-            <View style={styles.avatarContainer}>
-              <Text style={styles.avatarText}>
-                {name ? name.split(' ').map(n => n[0]).join('').toUpperCase().slice(0, 2) : 'NA'}
-              </Text>
-            </View>
-            <Text style={styles.profileName}>{name}</Text>
-          </View>
-
           {/* Personal Information */}
           <View style={styles.card}>
             <View style={styles.cardHeader}>
@@ -344,7 +328,6 @@ export default function Profile() {
           <Text style={styles.versionText}>Version 1.0.0</Text>
         </View>
       </ScrollView>
-    </SafeAreaView>
   );
 }
 
@@ -380,7 +363,6 @@ const styles = StyleSheet.create({
   },
   content: {
     padding: 16,
-    paddingBottom: 32,
   },
   loadingText: {
     fontSize: 16,
