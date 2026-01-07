@@ -1,6 +1,6 @@
 import { Ionicons } from '@expo/vector-icons';
 import { Drawer } from 'expo-router/drawer';
-import { ThemeProvider, useTheme } from './context/ThemeContext';
+import { ThemeProvider, useTheme } from '../src/context/ThemeContext';
 
 // DrawerLayout component to access theme context
 function DrawerLayout() {

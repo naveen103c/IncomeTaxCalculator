@@ -3,9 +3,12 @@ import { useState } from "react";
 import { Alert, ScrollView, Text, TouchableOpacity, View } from "react-native";
 import { TextInput } from "react-native-gesture-handler";
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { styles } from './styles/common.styles';
+import { useTheme } from '../src/context/ThemeContext';
+import { getStyles } from '../src/styles/common.styles';
 
 export default function Profile() {
+  const { colors } = useTheme();
+  const styles = getStyles(colors);
   const [isEditing, setIsEditing] = useState(false);
   const [loading, setLoading] = useState(false);
   const [showDatePicker, setShowDatePicker] = useState(false);

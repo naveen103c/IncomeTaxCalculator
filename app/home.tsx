@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { ScrollView, Text, TextInput, TouchableOpacity, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { styles } from './styles/common.styles';
+import { useTheme } from '../src/context/ThemeContext';
+import { getStyles } from '../src/styles/common.styles';
 
 interface TaxBreakdown {
   grossIncome: number;
@@ -16,6 +17,8 @@ interface TaxBreakdown {
 }
 
 export default function Home() {
+  const { colors } = useTheme();
+  const styles = getStyles(colors);
   const [grossIncome, setGrossIncome] = useState('');
   const [section80C, setSection80C] = useState('');
   const [section80D, setSection80D] = useState('');
