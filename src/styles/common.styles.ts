@@ -157,7 +157,7 @@ export const getStyles = (colors: any) =>
       backgroundColor: '#e5e7eb',
       marginVertical: 12,
     },
-    settingItem: {
+    cardItem: {
       flexDirection: 'row',
       justifyContent: 'space-between',
       alignItems: 'center',
@@ -165,11 +165,11 @@ export const getStyles = (colors: any) =>
       borderBottomWidth: 1,
       borderBottomColor: '#f3f4f6',
     },
-    settingText: {
+    cardItemText: {
       fontSize: 16,
       color: '#1f2937',
     },
-    settingArrow: {
+    cardArrow: {
       fontSize: 24,
       color: '#9ca3af',
     },

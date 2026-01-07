@@ -322,9 +322,9 @@ export default function Profile() {
           <View style={styles.card}>
             <Text style={styles.cardTitle}>Settings</Text>
 
-            <TouchableOpacity style={styles.settingItem} onPress={handleViewDatabase}>
-              <Text style={styles.settingText}>View Database (Debug)</Text>
-              <Text style={styles.settingArrow}>›</Text>
+            <TouchableOpacity style={styles.cardItem} onPress={handleViewDatabase}>
+              <Text style={styles.cardItemText}>View Database (Debug)</Text>
+              <Text style={styles.cardArrow}>›</Text>
             </TouchableOpacity>
           </View>
 

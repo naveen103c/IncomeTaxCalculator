@@ -11,11 +11,10 @@ export default function Settings() {
     <View style={styles.container}>
       <ScrollView contentContainerStyle={styles.content}>
         <Text style={styles.title}>Settings</Text>
-        <Text style={styles.subtitle}>Configure your app preferences</Text>
-        
         <View style={styles.card}>
-          <View style={styles.settingItem}>
-            <Text style={styles.settingText}>Dark Mode</Text>
+            <Text style={styles.cardTitle}>Configure your app preferences</Text>
+            <View style={styles.cardItem}>
+                <Text style={styles.cardItemText}>Dark Mode</Text>
             <Switch
               trackColor={{ false: '#767577', true: colors.primary }}
               thumbColor={isDark ? '#f4f3f4' : '#f4f3f4'}
