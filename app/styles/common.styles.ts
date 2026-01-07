@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native';
+import { Platform, StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
   radioButton: {
@@ -126,22 +126,6 @@ export const styles = StyleSheet.create({
     fontSize: 16,
     color: '#1f2937',
   },
-  calendarIcon: {
-    fontSize: 16,
-    color: '#6b7280',
-  },
-  cancelButton: {
-    backgroundColor: '#e5e7eb',
-    padding: 12,
-    borderRadius: 8,
-    alignItems: 'center',
-    marginTop: 8,
-  },
-  cancelButtonText: {
-    color: '#374151',
-    fontSize: 16,
-    fontWeight: '600',
-  },
   summaryRow: {
     flexDirection: 'row',
     justifyContent: 'space-between',
@@ -188,14 +172,38 @@ export const styles = StyleSheet.create({
     fontSize: 24,
     color: '#9ca3af',
   },
-  logoutButton: {
+  mainButton: {
+    flex: 1,
+    backgroundColor: '#2563eb',
+    padding: 16,
+    borderRadius: 8,
+    alignItems: 'center',
+  },
+  mainButtonText: {
+    color: '#fff',
+    fontSize: 16,
+    fontWeight: 'bold',
+  },
+  secondaryButton: {
+    flex: 1,
+    backgroundColor: '#e5e7eb',
+    padding: 16,
+    borderRadius: 8,
+    alignItems: 'center',
+  },
+  secondaryButtonText: {
+    color: '#374151',
+    fontSize: 16,
+    fontWeight: '600',
+  },
+  cancelButton: {
+    flex: 1,
     backgroundColor: '#dc2626',
     padding: 16,
     borderRadius: 8,
     alignItems: 'center',
-    marginBottom: 16,
   },
-  logoutButtonText: {
+  cancelButtonText: {
     color: '#fff',
     fontSize: 16,
     fontWeight: 'bold',
@@ -224,5 +232,165 @@ export const styles = StyleSheet.create({
   ageCategoryActive: {
     fontWeight: 'bold',
     color: '#2563eb',
+  },
+
+  title: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    color: '#1f2937',
+    marginBottom: 20,
+    textAlign: 'center',
+  },
+  inputSection: {
+    backgroundColor: '#fff',
+    borderRadius: 12,
+    padding: 16,
+    marginBottom: 16,
+    ...Platform.select({
+      ios: {
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.1,
+        shadowRadius: 4,
+      },
+      android: {
+        elevation: 3,
+      },
+    }),
+  },
+  sectionTitle: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    color: '#1f2937',
+    marginBottom: 16,
+  },
+  inputGroup: {
+    marginBottom: 16,
+  },
+  buttonContainer: {
+    flexDirection: 'row',
+    gap: 12,
+    marginTop: 8,
+  },
+  summaryCard: {
+    backgroundColor: '#dbeafe',
+    borderRadius: 12,
+    padding: 20,
+    marginBottom: 16,
+    borderWidth: 2,
+    borderColor: '#3b82f6',
+  },
+  summaryTitle: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    color: '#1e40af',
+    marginBottom: 16,
+    textAlign: 'center',
+  },
+  summaryAmount: {
+    fontSize: 18,
+    fontWeight: '600',
+    color: '#1f2937',
+  },
+  savingsAmount: {
+    color: '#059669',
+    fontSize: 20,
+  },
+  recommendation: {
+    fontSize: 16,
+    color: '#1e40af',
+    textAlign: 'center',
+    marginTop: 8,
+    fontWeight: 'bold',
+  },
+  regimeCard: {
+    backgroundColor: '#fff',
+    borderRadius: 12,
+    padding: 16,
+    marginBottom: 16,
+    ...Platform.select({
+      ios: {
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.1,
+        shadowRadius: 4,
+      },
+      android: {
+        elevation: 3,
+      },
+    }),
+  },
+  regimeTitle: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    color: '#2563eb',
+    marginBottom: 16,
+  },
+  detailRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    paddingVertical: 8,
+  },
+  detailLabel: {
+    fontSize: 14,
+    color: '#4b5563',
+  },
+  detailValue: {
+    fontSize: 14,
+    color: '#1f2937',
+    fontWeight: '500',
+  },
+  boldText: {
+    fontWeight: 'bold',
+    fontSize: 16,
+  },
+  taxAmount: {
+    color: '#dc2626',
+    fontSize: 18,
+  },
+  infoBox: {
+    backgroundColor: '#fef3c7',
+    padding: 12,
+    borderRadius: 8,
+    marginVertical: 8,
+  },
+  infoText: {
+    fontSize: 13,
+    color: '#92400e',
+  },
+  infoCard: {
+    backgroundColor: '#fff',
+    borderRadius: 12,
+    padding: 16,
+    marginBottom: 16,
+    ...Platform.select({
+      ios: {
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.1,
+        shadowRadius: 4,
+      },
+      android: {
+        elevation: 3,
+      },
+    }),
+  },
+  infoCardTitle: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    color: '#1f2937',
+    marginBottom: 12,
+  },
+  slabTitle: {
+    fontSize: 15,
+    fontWeight: 'bold',
+    color: '#2563eb',
+    marginBottom: 6,
+  },
+  slabText: {
+    fontSize: 14,
+    color: '#4b5563',
+    marginBottom: 4,
   },
 });
