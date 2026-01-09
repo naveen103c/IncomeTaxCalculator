@@ -172,6 +172,7 @@ export default function Profile() {
                 value={tempName}
                 onChangeText={setTempName}
                 placeholder="Enter your name"
+                placeholderTextColor={styles.placeholderTextColor}
               />
               ) : (
                 <Text style={styles.value}>{name}</Text>

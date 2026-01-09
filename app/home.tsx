@@ -144,6 +144,7 @@ export default function Home() {
               <TextInput
                 style={styles.input}
                 placeholder="Enter amount"
+                placeholderTextColor={styles.placeholderTextColor}
                 keyboardType="numeric"
                 value={grossIncome}
                 onChangeText={setGrossIncome}
@@ -155,6 +156,7 @@ export default function Home() {
               <TextInput
                 style={styles.input}
                 placeholder="PF, PPF, LIC, etc."
+                placeholderTextColor={styles.placeholderTextColor}
                 keyboardType="numeric"
                 value={section80C}
                 onChangeText={setSection80C}
@@ -166,6 +168,7 @@ export default function Home() {
               <TextInput
                 style={styles.input}
                 placeholder="Health Insurance"
+                placeholderTextColor={styles.placeholderTextColor}
                 keyboardType="numeric"
                 value={section80D}
                 onChangeText={setSection80D}
@@ -177,6 +180,7 @@ export default function Home() {
               <TextInput
                 style={styles.input}
                 placeholder="80E, 80G, HRA, etc."
+                placeholderTextColor={styles.placeholderTextColor}
                 keyboardType="numeric"
                 value={otherDeductions}
                 onChangeText={setOtherDeductions}

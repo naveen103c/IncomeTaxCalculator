@@ -8,8 +8,8 @@ export default function Settings() {
   const styles = getStyles(colors);
 
   return (
-    <View style={styles.container}>
-      <ScrollView contentContainerStyle={styles.content}>
+    <ScrollView style={styles.scrollView}>
+      <View style={styles.content}>
         <Text style={styles.title}>Settings</Text>
         <View style={styles.card}>
             <Text style={styles.cardTitle}>Configure your app preferences</Text>
@@ -24,7 +24,7 @@ export default function Settings() {
             />
           </View>
         </View>
-      </ScrollView>
-    </View>
+      </View>
+    </ScrollView>
   );
 }

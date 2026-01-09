@@ -5,33 +5,51 @@ import { Appearance } from 'react-native';
 export interface ThemeColors {
   background: string;
   text: string;
+  note: string;
+  primary: string;
   card: string;
   border: string;
-  primary: string;
+  primaryButton: string;
+  primaryButtonText: string;
   secondaryButton: string;
   secondaryButtonText: string;
+  cancelButton: string;
+  cancelButtonText: string;
+  placeholderTextColor: string;
   // Add other colors as needed
 }
 
 // Define our light and dark themes
 export const lightTheme: ThemeColors = {
-  background: '#f5f5f5',
-  text: '#1f2937',
-  card: '#ffffff',
-  border: '#d1d5db',
-  primary: '#2563eb',
-  secondaryButton: '#e5e7eb',
-  secondaryButtonText: '#374151',
+  background: '#f8f9fa', // A very light, clean off-white
+  text: '#212529', // A standard dark color for high readability
+  note: '#dbeafe', // A medium gray for secondary text and notes
+  primary: '#2563eb', // A vibrant, modern blue for primary actions
+  card: '#ffffff', // Clean white for card backgrounds
+  border: '#E5E7EB', // A subtle gray for borders
+  primaryButton: '#007BFF', // Matching the primary color
+  primaryButtonText: '#ffffff', // White text for high contrast on the primary button
+  secondaryButton: '#E9ECEF', // A light gray for secondary actions
+  secondaryButtonText: '#212529', // Dark text for readability on the light gray button
+  cancelButton: '#DC3545', // A standard, clear red for destructive actions
+  cancelButtonText: '#ffffff', // White text for high contrast on the cancel button
+  placeholderTextColor: '#6C757D', // A medium gray for placeholder text
 };
 
 export const darkTheme: ThemeColors = {
   background: '#111827', // Darker background
   text: '#f9fafb',
+  note: '#9ca3af', // Lighter gray for secondary text and notes
+  primary: '#3b82f6',
   card: '#1f2937', // Dark card background
   border: '#4b5563',
-  primary: '#3b82f6',
+  primaryButton: '#3b82f6',
+  primaryButtonText: '#f9fafb',
   secondaryButton: '#4b5563',
   secondaryButtonText: '#f9fafb',
+  cancelButton: '#111827',
+  cancelButtonText: '#f9fafb',
+  placeholderTextColor: '#9ca3af',
 };
 
 // Define the context shape

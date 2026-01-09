@@ -4,31 +4,32 @@ export const getStyles = (colors: any) =>
   StyleSheet.create({
     radioButton: {
       borderWidth: 1,
-      borderColor: '#d1d5db',
+      borderColor: colors.border,
       borderRadius: 12,
       paddingVertical: 8,
       paddingHorizontal: 16,
       marginHorizontal: 4,
-      backgroundColor: '#fff',
+      backgroundColor: colors.card,
     },
     radioButtonSelected: {
-      backgroundColor: '#2563eb',
-      borderColor: '#2563eb',
+      backgroundColor: colors.primary,
+      borderColor: colors.primary,
     },
     radioButtonText: {
       fontSize: 14,
-      color: '#1f2937',
+      color: colors.text,
       fontWeight: '500',
     },
     radioButtonTextSelected: {
-      color: '#fff',
+      color: colors.card,
     },
     container: {
       flex: 1,
-      backgroundColor: '#f5f5f5',
+      backgroundColor: colors.background,
     },
     scrollView: {
       flex: 1,
+      backgroundColor: colors.background,
     },
     content: {
       padding: 16,
@@ -36,10 +37,10 @@ export const getStyles = (colors: any) =>
     },
     loadingText: {
       fontSize: 16,
-      color: '#6b7280',
+      color: colors.text,
     },
     profileHeader: {
-      backgroundColor: '#2563eb',
+      backgroundColor: colors.primary,
       borderRadius: 12,
       padding: 24,
       alignItems: 'center',
@@ -49,7 +50,7 @@ export const getStyles = (colors: any) =>
       width: 80,
       height: 80,
       borderRadius: 40,
-      backgroundColor: '#1e40af',
+      backgroundColor: colors.primary,
       justifyContent: 'center',
       alignItems: 'center',
       marginBottom: 12,
@@ -57,20 +58,20 @@ export const getStyles = (colors: any) =>
     avatarText: {
       fontSize: 32,
       fontWeight: 'bold',
-      color: '#fff',
+      color: colors.card,
     },
     profileName: {
       fontSize: 24,
       fontWeight: 'bold',
-      color: '#fff',
+      color: colors.card,
       marginBottom: 4,
     },
     profileEmail: {
       fontSize: 14,
-      color: '#dbeafe',
+      color: colors.card,
     },
     card: {
-      backgroundColor: '#fff',
+      backgroundColor: colors.card,
       borderRadius: 12,
       padding: 16,
       marginBottom: 16,
@@ -84,12 +85,12 @@ export const getStyles = (colors: any) =>
     cardTitle: {
       fontSize: 18,
       fontWeight: 'bold',
-      color: '#1f2937',
+      color: colors.text,
       marginBottom: 16,
     },
     editButton: {
       fontSize: 16,
-      color: '#2563eb',
+      color: colors.primary,
       fontWeight: '600',
     },
     infoGroup: {
@@ -97,35 +98,37 @@ export const getStyles = (colors: any) =>
     },
     label: {
       fontSize: 14,
-      color: '#6b7280',
+      color: colors.text,
       marginBottom: 6,
       fontWeight: '500',
     },
     value: {
       fontSize: 16,
-      color: '#1f2937',
+      color: colors.text,
     },
     input: {
       borderWidth: 1,
-      borderColor: '#d1d5db',
+      borderColor: colors.border,
       borderRadius: 8,
       padding: 12,
       fontSize: 16,
-      backgroundColor: '#fff',
+      backgroundColor: colors.card,
+      color: colors.text,
     },
+    placeholderTextColor: colors.placeholderTextColor,
     datePickerButton: {
       flexDirection: 'row',
       alignItems: 'center',
       justifyContent: 'space-between',
       borderWidth: 1,
-      borderColor: '#d1d5db',
+      borderColor: colors.border,
       borderRadius: 8,
       padding: 12,
-      backgroundColor: '#fff',
+      backgroundColor: colors.card,
     },
     datePickerText: {
       fontSize: 16,
-      color: '#1f2937',
+      color: colors.text,
     },
     summaryRow: {
       flexDirection: 'row',
@@ -135,26 +138,26 @@ export const getStyles = (colors: any) =>
     },
     summaryLabel: {
       fontSize: 14,
-      color: '#6b7280',
+      color: colors.text,
     },
     summaryValue: {
       fontSize: 14,
-      color: '#1f2937',
+      color: colors.text,
       fontWeight: '500',
     },
     summaryLabelBold: {
       fontSize: 16,
-      color: '#1f2937',
+      color: colors.text,
       fontWeight: 'bold',
     },
     summaryValueBold: {
       fontSize: 18,
-      color: '#dc2626',
+      color: colors.notification,
       fontWeight: 'bold',
     },
     divider: {
       height: 1,
-      backgroundColor: '#e5e7eb',
+      backgroundColor: colors.border,
       marginVertical: 12,
     },
     cardItem: {
@@ -163,63 +166,63 @@ export const getStyles = (colors: any) =>
       alignItems: 'center',
       paddingVertical: 14,
       borderBottomWidth: 1,
-      borderBottomColor: '#f3f4f6',
+      borderBottomColor: colors.border,
     },
     cardItemText: {
       fontSize: 16,
-      color: '#1f2937',
+      color: colors.text,
     },
     cardArrow: {
       fontSize: 24,
-      color: '#9ca3af',
+      color: colors.text,
     },
     mainButton: {
       flex: 1,
-      backgroundColor: '#2563eb',
+      backgroundColor: colors.primaryButton,
       padding: 16,
       borderRadius: 8,
       alignItems: 'center',
     },
     mainButtonText: {
-      color: '#fff',
+      color: colors.primaryButtonText,
       fontSize: 16,
       fontWeight: 'bold',
     },
     secondaryButton: {
       flex: 1,
-      backgroundColor: '#e5e7eb',
+      backgroundColor: colors.secondaryButton,
       padding: 16,
       borderRadius: 8,
       alignItems: 'center',
     },
     secondaryButtonText: {
-      color: '#374151',
+      color: colors.text,
       fontSize: 16,
       fontWeight: '600',
     },
     cancelButton: {
       flex: 1,
-      backgroundColor: '#dc2626',
+      backgroundColor: colors.cancelButton,
       padding: 16,
       borderRadius: 8,
       alignItems: 'center',
     },
     cancelButtonText: {
-      color: '#fff',
+      color: colors.cancelButtonText,
       fontSize: 16,
       fontWeight: 'bold',
     },
     versionText: {
       textAlign: 'center',
       fontSize: 12,
-      color: '#9ca3af',
+      color: colors.text,
     },
     ageContainer: {
       marginTop: 8,
     },
     ageText: {
       fontSize: 16,
-      color: '#1f2937',
+      color: colors.text,
     },
     ageCategoryContainer: {
       flexDirection: 'row',
@@ -227,12 +230,12 @@ export const getStyles = (colors: any) =>
     },
     ageCategory: {
       fontSize: 14,
-      color: '#6b7280',
+      color: colors.text,
       marginRight: 8,
     },
     ageCategoryActive: {
       fontWeight: 'bold',
-      color: '#2563eb',
+      color: colors.primary,
     },
     title: {
       fontSize: 24,
@@ -247,13 +250,13 @@ export const getStyles = (colors: any) =>
       marginBottom: 24,
     },
     inputSection: {
-      backgroundColor: '#fff',
+      backgroundColor: colors.card,
       borderRadius: 12,
       padding: 16,
       marginBottom: 16,
       ...Platform.select({
         ios: {
-          shadowColor: '#000',
+          shadowColor: colors.text,
           shadowOffset: { width: 0, height: 2 },
           shadowOpacity: 0.1,
           shadowRadius: 4,
@@ -278,12 +281,12 @@ export const getStyles = (colors: any) =>
       marginTop: 8,
     },
     summaryCard: {
-      backgroundColor: '#dbeafe',
+      backgroundColor: colors.note,
       borderRadius: 12,
       padding: 20,
       marginBottom: 16,
       borderWidth: 2,
-      borderColor: '#3b82f6',
+      borderColor: colors.note,
     },
     summaryTitle: {
       fontSize: 20,
@@ -295,7 +298,7 @@ export const getStyles = (colors: any) =>
     summaryAmount: {
       fontSize: 18,
       fontWeight: '600',
-      color: '#1f2937',
+      color: '#059669',
     },
     savingsAmount: {
       color: '#059669',
@@ -328,7 +331,7 @@ export const getStyles = (colors: any) =>
     regimeTitle: {
       fontSize: 18,
       fontWeight: 'bold',
-      color: colors.primary,
+      color: '#2563eb',
       marginBottom: 16,
     },
     detailRow: {
@@ -371,7 +374,7 @@ export const getStyles = (colors: any) =>
       marginBottom: 16,
       ...Platform.select({
         ios: {
-          shadowColor: '#000',
+          shadowColor: colors.text,
           shadowOffset: { width: 0, height: 2 },
           shadowOpacity: 0.1,
           shadowRadius: 4,
@@ -384,18 +387,18 @@ export const getStyles = (colors: any) =>
     infoCardTitle: {
       fontSize: 18,
       fontWeight: 'bold',
-      color: colors.text,
+      color: '#1f2937',
       marginBottom: 12,
     },
     slabTitle: {
       fontSize: 15,
       fontWeight: 'bold',
-      color: colors.primary,
+      color: '#2563eb',
       marginBottom: 6,
     },
     slabText: {
       fontSize: 14,
-      color: colors.text,
+      color: '#4b5563',
       marginBottom: 4,
     },
   });
