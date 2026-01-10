@@ -303,7 +303,7 @@ export default function Profile() {
 
           {/* ...existing cards... */}
           {/* Tax Summary Card */}
-          <View style={styles.card}>
+          {/* <View style={styles.card}>
             <Text style={styles.cardTitle}>Tax Summary (FY 2023-24)</Text>
 
             <View style={styles.summaryRow}>
@@ -317,17 +317,17 @@ export default function Profile() {
               <Text style={styles.summaryLabelBold}>Estimated Tax Liability</Text>
               <Text style={styles.summaryValueBold}>₹45,600</Text>
             </View>
-          </View>
+          </View> */}
 
           {/* Settings Card */}
-          <View style={styles.card}>
+          {/* <View style={styles.card}>
             <Text style={styles.cardTitle}>Settings</Text>
 
             <TouchableOpacity style={styles.cardItem} onPress={handleViewDatabase}>
               <Text style={styles.cardItemText}>View Database (Debug)</Text>
               <Text style={styles.cardArrow}>›</Text>
             </TouchableOpacity>
-          </View>
+          </View> */}
 
           {/* App Version */}
           <Text style={styles.versionText}>Version 1.0.0</Text>
